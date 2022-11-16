@@ -1,0 +1,220 @@
+@font-face {
+    font-family: Open Sans;
+    src: url(fonts/OpenSans-Regular.ttf);
+}
+
+body {
+    background-color: #353535;
+    font-size: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.nav-element:hover {
+    color: #154166;
+    background-color: #ededef;
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: #fff;
+    width: 100%;
+    height: 46px;
+    box-shadow: 0 1px 2px 0 rgb(50 50 50 / 40%);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar ul {
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+    color: rgb(80, 80, 80);
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+.navbar ul:first-child {
+    border-left: 1px solid hsla(0,0%,80%,.65);
+    padding-left: 0;
+}
+
+.nav-element {
+    height: 46px;
+    list-style: none;
+    line-height: 46px;
+    padding: 0 12px 0;
+    border-right: 1px solid hsla(0,0%,80%,.65);
+    transition: 0.2s;
+}
+
+.search {
+    height: 25px;
+    margin: 10px 15px 10px;
+    border: 1px solid hsla(0,0%,80%,.65);
+    display: inline-block;
+}
+
+.search:focus-within {
+    border: 1px solid #154166;
+}
+
+.search-bar {
+    line-height: 18px;
+    width: 140px;
+    margin: 0;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    display: inline;
+    position: relative;
+    top: -2px;
+}
+
+.search-bar::placeholder {
+    position: relative;
+    top: 2px;
+    color: rgba(0, 0, 0, 0.4) ;
+}
+
+.search-icon {
+    box-sizing: content-box;
+    width: 16px;
+    height: 18px;
+    margin: 3px 3px 3px;
+    display: inline-block;
+    border-left: 1px solid hsla(0,0%,80%,.65);
+    padding: 0 0 0 4px;
+}
+
+.search-icon i {
+    position: relative;
+    top: -1px;
+}
+
+.search-icon i:hover {
+    color: #2d6da3;
+    cursor: pointer;
+}
+
+.search-bar::placeholder {
+    font-family: Open Sans, sans-serif;
+    position: relative;
+    top: 2px;
+    font-size: 15px;
+}
+
+.login {
+    height: 20px;
+    list-style: none;
+    margin-top: 14px;
+    margin-right: 20px;
+    padding: 0 10px 0;
+    font-size: 14px;
+    text-decoration: none;
+    border-left: 1px solid hsla(0,0%,80%,.65);
+    border-right: 1px solid hsla(0,0%,80%,.65);
+    color: #2d6da3;
+}
+
+.login:hover {
+    color: #154166;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ededef;
+    position: relative;
+    z-index: 0;
+    min-height: 100%;
+}
+
+.contact-form {
+    font-family: Open Sans, sans-serif;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-form h2 {
+    font-family: inherit;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.form-group {
+    font-size: 14px;
+    font-family: inherit;
+    color: rgb(80, 80, 80);
+    margin-bottom: 20px;
+}
+
+.form-group input::placeholder, textarea::placeholder {
+    font-size: 12px;
+    font-family: inherit;
+    color: gray;
+    position: relative;
+    left: -2px;
+    transition: color 0.5s;
+}
+
+.form-group input, .form-group textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #777777;
+    background-color: #ededef;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    width: calc(50% - 15px);
+}
+
+.form-group input:focus::placeholder, textarea:focus::placeholder {
+    color: transparent;
+}
+
+.form-row input {
+    display: block;
+    width: 100%;
+}
+
+.form-group input:focus, textarea:focus {
+    padding-left: 0;
+}
+
+.form-row {
+    display: inline-block;
+    width: calc(50% - 15px);
+    margin: 0 15px 0 0;
+}
+
+.submit-button {
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: #2d6da3;
+    color: #fff;
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    padding: 5px 14px;
+}
+
+.submit-button:hover {
+    background-color: #1f5582;
+}
+
+.submit-button:active {
+    scale: 95%;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 363px);
+}
